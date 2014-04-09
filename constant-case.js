@@ -1,4 +1,4 @@
-var sentence = require('sentence-case');
+var snake = require('snake-case');
 
 /**
  * Constant case a string.
@@ -7,5 +7,5 @@ var sentence = require('sentence-case');
  * @return {String}
  */
 module.exports = function (string) {
-  return sentence(string).toUpperCase().replace(/ /g, '_');
+  return snake(string).toUpperCase();
 };
